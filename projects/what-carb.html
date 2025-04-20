@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | What Carb?</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>What Carb?</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/what-carb-desktop-and-mobile.png"
+          alt="Image of Kanban style app, obviously designed to perfection"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, React, MongoDB, Express.js, Node.js
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/what-carb-be">Github (be)</a>
+            <a href="https://github.com/jamesyuill/what-carb-react"
+              >Github (fe)</a
+            >
+
+            <a href="https://what-carb.netlify.app/">Visit Site</a>
+          </div>
+          <br />
+        </div>
+        <p>
+          Like any real software engineer will tell you, "you always start with
+          a recipe app". You know why? It's because it requires working with
+          data in an easy 'consumable' (...nudge nudge) way.
+        </p>
+        <p>
+          If you're anything like me, you will pick your meals based on the
+          sheer volume of carbs it allows you to consume
+        </p>
+        <p>
+          So the most frequent question in our house is, "What carb do you want
+          tonight?". A close second being "Are you sure that's a healthy amount
+          of carbs?!"
+        </p>
+        <p>And so, What Carb? was born</p>
+        <p>
+          I use MongoDB for the database, and React for the front end. It's a
+          very basic MERN app with CRUD capabilites. If you don't know what that
+          is google it!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

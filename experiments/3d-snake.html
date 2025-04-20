@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | 3D Snake</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>3D Snake</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/3d-snake-desktop.png"
+          alt="3d grid with white cube and yellow 'snake'"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript, Three.js</p>
+
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          I mean, what else is there to say. This is the old mobile game, snake,
+          but in 3D
+        </p>
+        <p>
+          Not very useful, but again, just for the sake of figuring it out and
+          building it
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

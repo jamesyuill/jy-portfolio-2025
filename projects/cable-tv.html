@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | cable tv</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>cable tv Website</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/cable-tv-website.png"
+          alt="cable tv logo floating above a pixel wave upon a black background"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, Three.js, GSAP - Created a 3d based website using
+            vanilla Three.js.
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/cabletv-three-site"
+              >Github</a
+            >
+
+            <a href="https://cable-tv-website.netlify.app/">Demo Site</a>
+          </div>
+        </div>
+
+        <p>
+          Not much to this one. One of my very first experiments with Three.js.
+        </p>
+        <p>
+          I also used GSAP for the first time and discovered how amazing a
+          library it is! I'm clearly not using it to its full capacity here
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

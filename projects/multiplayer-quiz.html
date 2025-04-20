@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Multiplayer Quiz</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Multiplayer Quiz</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/multiplayer-quiz-desktop.png"
+          alt="Image of 3 browser windows with quiz interface"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, React, socket.io, Nodemon
+          </p>
+          <div id="links">
+            <a href="https://quizzingtons.netlify.app/">Visit Site</a>
+          </div>
+          <br />
+        </div>
+        <p>
+          I build this in order to host a quiz at work. The goal was to have two
+          teams each sitting in groups around their one laptop (per team). I
+          would then have my laptop (the quizmaster) on a big screen for
+          everyone to see. So just to reiterate. There are two laptops and a
+          third (mine), which is the controller.
+        </p>
+
+        <p>
+          This means I had to distinguish in the frontend logic, which ones were
+          the players and which was the controller.
+        </p>
+        <p>
+          This was actually not that hard, as I have the state stored on the
+          server. So one team adds their name and is now team 1, the next team
+          adds their name and is team 2, that means any other browser with
+          socket ids not matching either of those can be the controller. (I
+          wasn't worried about other people joining as this was a one off use)
+        </p>
+        <p>
+          I utilised the library socket.io, which I was vaguely familiar with
+          from my bootcamp project. web sockets in order to keep the game state
+          in the server.
+        </p>
+        <p>Made in React.</p>
+      </main>
+    </div>
+  </body>
+</html>

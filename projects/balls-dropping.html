@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Balls Dropping</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Balls Dropping</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/balls-dropping-desktop.png"
+          alt="Image of balls dropping onto what looks like a piano"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript, Three.js, Tone.js</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p></p>
+        <p>
+          This was one of the first projects where I really got to grips with
+          Object Oriented Programming
+        </p>
+        <p>I had the idea and decdided to see if I could do it</p>
+        <p>
+          I used Three.js for the visuals (obvs) and Tone.js for the audio
+          elements.
+        </p>
+        <p>
+          The aim was to get a visual representation of a bouncing ball, but
+          once I'd built one ball, I then wanted to generate more. I refactored
+          the bouncing ball as an extended class with it's own methods.
+        </p>
+        <p>
+          I would like to add the ability for a user to upload an audio clip and
+          for that to be used. Maybe even to split the sounds up over the number
+          of balls.
+        </p>
+        <p>
+          So basically, it's not really finished, but I'm betting you probably
+          have a tonne of projects you'd love to expand upon. If only these
+          other ideas that keep popping up would just chill out for a bit!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

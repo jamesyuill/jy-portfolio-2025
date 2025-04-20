@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Etsy to Insta</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Etsy to Insta Scraper</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/etsy-insta-scraper-big.png"
+          alt="Split image, one side is an etsy shop the other is an instagram profile"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, Node.js, Express.js, Puppeteer, Instagram Private API,
+            Node-Cron
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/etsy-gram-scraper">Github</a>
+            <a href="https://www.etsy.com/uk/shop/EverythingIsNoise"
+              >Etsy Shop</a
+            >
+
+            <a href="https://www.instagram.com/everything_is_noise/"
+              >Instagram</a
+            >
+          </div>
+          <br />
+        </div>
+        <p>
+          I built this using Puppeteer for the web scraping and
+          Instagram-Private-API for the posting.
+        </p>
+
+        <p>
+          The aim was to automate the task of regularly posting shop items from
+          a drop shipping site to Instagram.
+        </p>
+        <p>
+          The scraper is set up on a cron-job, going out twice a day to 'scrape'
+          an etsy shop. It grabs the images and the metadata for the item. It
+          then will log into an instagram profile and post about a randomly
+          chosen item. I varied the types of posts it would spit out. You know,
+          to make it a bit less like a robot!
+        </p>
+        <p>
+          Please go and buy something from the site. I think it's only made £20
+          so far and that was 100% my mum!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

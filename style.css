@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: Quicksand;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+#back-arrow:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+.hero {
+  justify-content: center;
+}
+
+.pink {
+  background-color: hotpink;
+}
+
+.red {
+  background-color: #fa5252;
+}
+
+.white {
+  background-color: white;
+}
+
+.orange {
+  background-color: #ffa94d;
+}
+
+.yellow {
+  background-color: #ffd43b;
+}
+
+.green {
+  background-color: #40c057;
+}
+
+.blue {
+  background-color: #4dabf7;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  color: hotpink;
+}
+#hero:hover {
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: scale(105%);
+  color: black;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    color: rgba(255, 105, 180, 0);
+    transform: scale(1500%);
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.menu-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOutAnimation {
+  animation-name: fadeOut;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  animation-delay: calc(var(--i) * 50ms);
+}
+
+.fadeUpAnimation {
+  animation-name: fadeUp;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* animation-delay: calc(var(--i) * 50ms); */
+}
+
+.menu-ball:hover {
+  cursor: pointer;
+  color: white;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: scale(105%);
+}
+
+#projects-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+  justify-content: center;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+}
+
+.project-card {
+  max-width: 250px;
+  min-width: 200px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+}
+
+.project-card a {
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.403);
+  color: black;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.project-card a:hover {
+  cursor: pointer;
+  background-color: #fa5252;
+  color: white;
+}
+
+.project-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: -0.75rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  font-weight: 200;
+  /* text-align: center; */
+  /* color: hsl(0, 0%, 10%); */
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+}
+
+#playground-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+  justify-content: center;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+}
+
+.playground-card {
+  max-width: 160px;
+  min-width: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.playground-card a {
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.403);
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: black;
+}
+
+.playground-card a:hover {
+  cursor: pointer;
+  background-color: #ffd43b;
+  /* color: white; */
+}
+
+.playground-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  /* margin-bottom: -0.75rem; */
+}
+
+.playground-card img {
+  width: 100%;
+}
+
+#contact-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  overflow-y: auto;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+}
+
+#contact-grid img {
+  width: 100px;
+}
+#contact-grid img:hover {
+  cursor: pointer;
+  filter: invert();
+}
+
+#experiments-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+  justify-content: center;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+}
+.experiment-card {
+  max-width: 250px;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+}
+
+.experiment-card a {
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.403);
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+}
+
+.experiment-card a:hover {
+  cursor: pointer;
+  background-color: #ffa94d;
+  color: white;
+}
+
+.experiment-card img {
+  width: 100%;
+}
+
+.experiment-card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: -0.75rem;
+}
+
+.experiment-card p {
+  font-size: 1rem;
+  font-weight: 200;
+  /* color: hsl(0, 0%, 10%); */
+}
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.099);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

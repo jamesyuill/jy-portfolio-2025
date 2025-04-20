@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Audio Rendering</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Audio Rendering</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/audio-rendering-desktop.png"
+          alt="a poorly designed user interface which shows a conditionally rendered green enter button when a certain note is sung"
+        />
+
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          This was an experiment to see if I could conditionally render a dom
+          element, based on whether the viewer could sing a secret note.
+        </p>
+        <p>
+          When that note is sung, the Enter button appears, unlocking that bit
+          of functionality. Presumably entering a website
+        </p>
+        <p>
+          Like all these experiments, it was just an idea that I had to see if I
+          could do
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

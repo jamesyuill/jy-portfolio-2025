@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Perfect Pitcher</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Perfect Pitcher</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/perfect-pitcher-desktop.png"
+          alt="Simple user interface, asking a question with a few buttons and text on the page"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          A little quiz I devloped for all those people that are able to sing a
+          song in the right key, without listening to it first.
+        </p>
+        <p>
+          As the note detection wobbles around quite a lot, I have a volume
+          threshold so that anything that is obviously loud gets added to an
+          array. Then I select the note that appears the most in order to make
+          sure the correct note is taken. I was quite happy with this bit of
+          logic
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

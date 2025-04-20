@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Standup Pickeroo</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Standup Pickeroo</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/standup-pickeroo-desktop.png"
+          alt="List of names with button to start the selection"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/standup-pickeroo">Github</a>
+
+            <a href="https://standup-pickeroo.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          Another work project. This was designed with the sole purpose of being
+          able to randomly pick people to talk at our standups
+        </p>
+        <p>Vanilla Javascript, nothing fancy</p>
+        <p>
+          I have an animation loop that (when a boolean is true, ie isSpinning)
+          will cycle through the names of the list.
+        </p>
+        <p>
+          The slowing down is achieved by counting the frames through every loop
+          of the animate function. When the remainder of the 'frames modulo
+          variable is equal to 0' then it changes the value of that variable
+          making the time steps greater
+        </p>
+        <p>
+          I really don't think I explained it well so defo check out the github
+          if you're at all interested
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

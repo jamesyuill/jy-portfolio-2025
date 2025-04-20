@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Browser Pong</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Browser Pong</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/browser-pong-desktop.png"
+          alt="The early computer game with two paddles ad one ball although the ball is a browser window and the two paddles are also browser windows"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          Much like the broswer battleships game, this started because I was
+          messing around with the window.open() method.
+        </p>
+        <p>
+          I set up a quick animation loop and then changed the position of the
+          ball browser over time
+        </p>
+        <p>
+          The other two browser windows act as the paddles and the logic is
+          essentially edge detection, reversing the velocity upon impact with a
+          paddle
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

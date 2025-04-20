@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Wiki Picture Scraper</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Wiki Picture Scraper</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/wiki-webscraper-desktop.png"
+          alt="Search box with a number of image results below. Someone has searched 'cheese'"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript, Express.js,Puppeteer, Nodemon, Next.js</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          I have a backend server that will scrape wikipedia for a text query,
+          returning all the images to a Next.js front end.
+        </p>
+        <p>
+          Write 'Cheese' into the search box and it will ping that off to a
+          server which dones the scrapping and then sends back the results
+        </p>
+        <p>
+          This was one of my first smaller experiments after completing the
+          software developer bootcamp.
+        </p>
+        <p>
+          Not much time was spent on the way the front end looks by the way!
+          Probably spent as much time finding that loading pug gif than I did
+          css styling!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

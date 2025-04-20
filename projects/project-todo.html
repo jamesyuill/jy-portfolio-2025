@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Project To-Do</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Project To-Do</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/project-todo-desktop.png"
+          alt="Image of Kanban style app, obviously designed to perfection"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+
+            Typescript, Next.js, NextAuth, Mongoose, MongoDB,
+            React-Beautiful-DnD, Bcrypt, Jest, React Testing Library
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/crm-project-ts">Github</a>
+          </div>
+          <br />
+        </div>
+        <p>
+          This is a project I build to get me familiar with NextAuth and
+          creating a signup/login style dashboard. It's also a project where I
+          used Typescript within Next.js for the first time.
+        </p>
+        <p>
+          I love everything about these kanban style websites. I use Trello in
+          my personal life! So for me the goal was to create a collection of
+          todo lists that could be moved around including the items inside. So
+          you can move one todo item into another collection.
+        </p>
+        <p>
+          The drag and drop functionality took a bit of time to solve just
+          because there are a few libraries that one can use. I opted for
+          Beautiful React DnD.
+        </p>
+        I used MongoDB to store the username data and the todo list data
+        <p>
+          You'll notice that this is not deployed yet as it's very much a work
+          in progress. It's not super responsive. I also need to set up a
+          default log in for people just browsing. In fact, I also need a seed
+          function for the data too. I can imagine when I host it people will be
+          deleting things left, right and centre! I can only imagine what crazy
+          things people will add to do!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

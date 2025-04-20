@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Guess What?!</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Guess What?!</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/guess-what-desktop.png"
+          alt="Guess Who style card game with images of aliens"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, Next.js, Socket.io, Express.js, Jest, MongoDB, Node.js
+          </p>
+          <div id="links">
+            <a href="https://github.com/PabloJulianRial/Guess-What-Backend"
+              >Github (be)</a
+            >
+            <a href="https://github.com/jamesyuill/guess-what-fe"
+              >Github (fe)</a
+            >
+
+            <a href="https://guess-what-gitkermit.netlify.app/">Visit Site</a>
+          </div>
+          <br />
+        </div>
+        <p>Now, this was a fun and frightening project!</p>
+        <p>
+          Build in around ten days, from inception to demonstration, as part of
+          my final software bootcamp project
+        </p>
+        <p>
+          I hasten to add that I did not do this on my own, I had the help of 4
+          other amazing programmers.
+        </p>
+        <p>
+          The aim was simple, make a version of Guess Who, but with aliens. MVP
+          was a single player game - which we achieved pretty quickly. Bonus
+          would be the multiplayer element.
+        </p>
+        <p>
+          Now you have to be aware that we had only really been programming in
+          anger for about two and a half months. And yes, we had decided to take
+          on web sockets. Was it bravado? No reader. It was definitely
+          ignorance.
+        </p>
+        <p>
+          Getting our heads round Socket.io was tough, although it is an amazing
+          library for web sockets.
+        </p>
+        <p>
+          With all first attempts there are a lot of things I would go back and
+          change, but I'm not going to do that, as it reminds me of a simpler
+          time, when 5 very junior devlopers attempted something they had no
+          idea about and actually managed to produce something that wasn't
+          entirely bad!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

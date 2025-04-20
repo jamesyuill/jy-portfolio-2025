@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Browser Battleships</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Browser Battleships</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/browser-battleships-desktop.png"
+          alt="main browser window is full of ocean with small boats in seperate browser windows scattered around - a bomb has narrowly avoided blowing one of the ships up"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          I'd been doing a lot of work with manipulating the browser window, and
+          thought about what game (after pong) would be good to translate to
+          browser windows.
+        </p>
+        <p>Battleships was my thinking</p>
+        <p>
+          A timer counts down and then drops the last browser 'bomb', if one of
+          your boats/windows is roughly within the same coordinates, that's a
+          hit!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

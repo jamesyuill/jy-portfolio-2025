@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Cli-Art</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Cli-Art</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/cli-art-desktop.png"
+          alt="Rust code within VSCode IDE"
+        />
+        <div class="belowimage">
+          <p><b>Tech: </b>Javascript, Python, C++, Rust</p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/bouncing-ball">Github</a>
+
+            <a href="https://balls-dropping.netlify.app/">Visit Site</a>
+          </div>
+        </div>
+        <p>
+          I have a feeling this kind of thing is very common amongst developers.
+          Code something in one language and then see what it looks like in
+          another.
+        </p>
+        <p>I wanted to use the terminal window for random generative art</p>
+        <p>
+          It's not amazing art, but basically, you plug in 4 characters and
+          press enter
+        </p>
+        <p>
+          Artwork is then generated based on a random distribution of those
+          characters
+        </p>
+        <p>I did Javascript first. Then Python, C++ and finally Rust</p>
+      </main>
+    </div>
+  </body>
+</html>

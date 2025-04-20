@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Portfolio 2023</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Portfolio 2023</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/old-portfolio-2023-desktop-mobile.png"
+          alt="Big 3d Hello floating amid a sea of boxes"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, React Three.Fiber, Three.js, Email.js, GSAP, gltfjsx
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/jy-portfolio">Github</a>
+
+            <a href="https://jy-portfolio-2023.netlify.app/">Visit Site</a>
+          </div>
+          <br />
+        </div>
+        <p>
+          Here we are, back at one of the very first protfolio sites I made
+          directly after completing my software bootcamp.
+        </p>
+
+        <p>
+          I'd been messing around with Three.js for a while, but had fallen in
+          love with the React way of making reusable components. I came across
+          React Three/Fiber and React Three/Drei and knew that I wanted to make
+          my portfolio using these libraries.
+        </p>
+        <p>It's a very simple canvas with a React website on top.</p>
+      </main>
+    </div>
+  </body>
+</html>

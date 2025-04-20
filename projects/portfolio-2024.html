@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../projects/projects.html`;
+      }
+    </script>
+    <title>James Yuill | Portfolio 2023</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Portfolio 2023</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/project-images/jy-portfolio-2024.png"
+          alt="Multicoloured shapes with a name and hamburger menu"
+        />
+        <div class="belowimage">
+          <p>
+            <b>Tech:</b>
+            Javascript, Next.js, Email.js,P5.js, GSAP
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/jy-portfolio">Github</a>
+
+            <a href="https://jy-portfolio-2024.netlify.app/">Visit Site</a>
+          </div>
+          <br />
+        </div>
+        <p>2024's attempt at a minimal and simple site.</p>
+        <p>
+          I used Next.js for this, because everyone was raving about it at the
+          time!
+        </p>
+        <p>
+          I immediately hit a brick wall with that front page and it's svg
+          animations
+        </p>
+        <p>
+          If you didn't know, Next offers the ability to render components on
+          the server which means faster loading times. Somthing like that!
+          Anyway, the problem was that in order for the svgs to be
+          programmatically inserted on the dom window, I needed the dom window
+          to exist.
+        </p>
+        <p>
+          I think I did something like, setting the state of the window to
+          undefined and then putting that in a useEffect so that when it mounts
+          we then set the innerWidth and innerHeights. Basically, I thinnk it
+          was a pretty hacky way of doing it, and I've never been happy with the
+          delay that you get when loading the index page. Needless to say, it
+          was seemless in my local environment!
+        </p>
+        <p>
+          I'm happy with how minimal the site was, but it was still too bloated
+          for my liking, hence me rebuilding my site again...ie...what you're
+          looking at right now.
+        </p>
+        <p>
+          I've been doing a lot of vanilla Javascript projects recently. Browser
+          manipulation, svg work (okay..using D3, but it feels the same, plus
+          I'm using it via a cdn so not super bloated!)
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

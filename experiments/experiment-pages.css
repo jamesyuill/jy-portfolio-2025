@@ -31,7 +31,7 @@ header {
 
 h1 {
   font-weight: 500;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
 }
 
 .container {
@@ -63,6 +63,10 @@ a {
 
 a:hover {
   color: white;
+}
+
+#back-arrow {
+  padding: 0 1rem;
 }
 
 #back-arrow:hover {
@@ -107,7 +111,7 @@ a:hover {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: black;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 /* Handle on hover */

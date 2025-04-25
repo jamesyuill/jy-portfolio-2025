@@ -65,10 +65,6 @@ a:hover {
   color: white;
 }
 
-#back-arrow {
-  /* padding-right: 1rem; */
-}
-
 #back-arrow:hover {
   cursor: pointer;
   filter: invert();
@@ -112,7 +108,7 @@ a:hover {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: black;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 /* Handle on hover */

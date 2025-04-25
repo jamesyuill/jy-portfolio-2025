@@ -75,6 +75,9 @@ h1 {
   background-color: white;
   border-radius: 50%;
   color: hotpink;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: scale(100%);
 }
 #hero:hover {
   cursor: pointer;
@@ -113,6 +116,9 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition-timing-function: ease-in;
+  transition: 0.3s;
+  transform: scale(100%);
 }
 
 @keyframes fadeOut {
@@ -248,13 +254,15 @@ h1 {
 }
 
 .playground-card h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   /* margin-bottom: -0.75rem; */
 }
 
 .playground-card img {
-  width: 100%;
+  /* width: 100%; */
+  height: 150px;
+  width: 150px;
 }
 
 #contact-grid {

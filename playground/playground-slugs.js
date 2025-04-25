@@ -79,6 +79,16 @@ const playgroundSlugs = [
     img_src: '../assets/p5-images/p5-hello-in-balls.png',
     img_url: 'https://editor.p5js.org/jamesyuill/full/F-s9W5VXS',
   },
+  {
+    title: 'Floating Grid (three)',
+    img_src: '../assets/three-images/three-floating-grid.png',
+    img_url: 'https://floating-grid.netlify.app/',
+  },
+  {
+    title: 'Moody Ball (three)',
+    img_src: '../assets/three-images/three-moody-ball.png',
+    img_url: 'https://moody-ball.netlify.app/',
+  },
 ];
 
 export default playgroundSlugs;

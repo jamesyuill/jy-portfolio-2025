@@ -1,3 +1,7 @@
+console.log(
+  '\x1b[35m%s\x0b',
+  'Hello friends! Enjoy my minimal, lightweight website! Be sure to stop by my experiments page for fun times'
+);
 //Header
 const padding = 1.4;
 const width = window.innerWidth / padding;

@@ -23,7 +23,7 @@ header {
   align-self: center;
   align-items: center;
   max-width: 1100px;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   padding: 0 1rem;
   background-color: #fa5252;
@@ -31,7 +31,6 @@ header {
 
 h1 {
   font-weight: 500;
-  padding: 0 1rem;
 }
 
 .container {
@@ -63,10 +62,6 @@ a {
 
 a:hover {
   color: white;
-}
-
-#back-arrow {
-  padding: 0 1rem;
 }
 
 #back-arrow:hover {

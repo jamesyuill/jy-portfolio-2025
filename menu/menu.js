@@ -36,9 +36,8 @@ menuBalls.forEach((item) => {
     e.target.classList.add('zoomIn');
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
-      console.log('ended');
       window.location.href = `../${target}/` + target + '.html';
-      // window.location.href = '../projects/projects.html';
+      target.classList.remove('zoomIn');
     });
     menuBalls.forEach((item) => {
       if (item !== e.target) {

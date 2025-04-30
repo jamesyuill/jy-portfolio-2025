@@ -32,16 +32,6 @@ hero.style.width = `${width < height ? width : height}px`;
 hero.style.height = `${width < height ? width : height}px`;
 hero.style.fontSize = `${width < height ? width / 120 : height / 120}rem`;
 
-//reload the page
-window.addEventListener('pageshow', () => {
-  const hero = document.querySelector('#hero');
-
-  hero.classList.remove('hero');
-  void hero.offsetWidth;
-
-  hero.classList.add('hero');
-});
-
 window.addEventListener('resize', (e) => {
   let width = e.target.innerWidth / padding;
   let height = e.target.innerHeight / padding;

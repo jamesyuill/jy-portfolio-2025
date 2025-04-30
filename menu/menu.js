@@ -17,18 +17,6 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
-//reload the page
-window.addEventListener('pageshow', () => {
-  const balls = document.querySelectorAll('.menu-ball');
-
-  balls.forEach((ball) => {
-    ball.classList.remove('menu-ball');
-    void ball.offsetWidth;
-
-    ball.classList.add('menu-ball');
-  });
-});
-
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');
 menuBalls.forEach((item) => {

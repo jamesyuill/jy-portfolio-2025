@@ -17,6 +17,13 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
+//reload the page
+window.addEventListener('pageshow', () => {
+  const balls = document.querySelectorAll('.menu-ball');
+  balls.classList.remove('menu-ball');
+  balls.classList.add('menu-ball');
+});
+
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');
 menuBalls.forEach((item) => {
@@ -31,13 +38,14 @@ menuBalls.forEach((item) => {
   }px`;
 
   item.addEventListener('click', (e) => {
-    const target = e.target.innerText;
-    e.target.classList.remove('fadeUpAnimation');
-    e.target.classList.add('zoomIn');
+    const text = e.target.innerText;
+    const target = e.target;
+    target.classList.remove('fadeUpAnimation');
+    target.classList.add('zoomIn');
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
-      window.location.href = `../${target}/` + target + '.html';
-      target.classList.remove('zoomIn');
+      window.location.href = `../${text}/` + text + '.html';
+      // target.classList.remove('zoomIn');
     });
     menuBalls.forEach((item) => {
       if (item !== e.target) {

@@ -37,6 +37,8 @@ window.addEventListener('pageshow', () => {
   const hero = document.querySelector('#hero');
 
   hero.classList.remove('hero');
+  void hero.offsetWidth;
+
   hero.classList.add('hero');
 });
 

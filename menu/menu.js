@@ -23,6 +23,8 @@ window.addEventListener('pageshow', () => {
 
   balls.forEach((ball) => {
     ball.classList.remove('menu-ball');
+    void ball.offsetWidth;
+
     ball.classList.add('menu-ball');
   });
 });

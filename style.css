@@ -36,7 +36,7 @@ h1 {
   filter: invert();
 }
 
-.hero {
+.herologo {
   justify-content: center;
 }
 
@@ -68,7 +68,7 @@ h1 {
   background-color: #4dabf7;
 }
 
-#hero {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@ h1 {
   transition: 0.3s;
   transform: scale(100%);
 }
-#hero:hover {
+.hero:hover {
   cursor: pointer;
   transition-timing-function: ease-in;
   transition: 0.3s;

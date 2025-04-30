@@ -20,8 +20,11 @@ const shrinkFactor = 3;
 //reload the page
 window.addEventListener('pageshow', () => {
   const balls = document.querySelectorAll('.menu-ball');
-  balls.classList.remove('menu-ball');
-  balls.classList.add('menu-ball');
+
+  balls.forEach((ball) => {
+    ball.classList.remove('menu-ball');
+    ball.classList.add('menu-ball');
+  });
 });
 
 //Ball size and font size

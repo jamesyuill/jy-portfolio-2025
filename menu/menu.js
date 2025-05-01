@@ -2,7 +2,6 @@ const projectBall = document.getElementById('project-ball');
 const experimentBall = document.getElementById('experiments-ball');
 const playgroundBall = document.getElementById('playground-ball');
 const contactBall = document.getElementById('contact-ball');
-let zoomedInBall;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -20,10 +19,9 @@ const shrinkFactor = 3;
 
 onpageshow = (event) => {
   if (event.persisted) {
-    const balls = document.querySelectorAll('.menu-ball');
-    balls.forEach((ball) => {
-      ball.className = 'menu-ball fadeUpAnimation';
-    });
+    const zoomedIn = document.querySelector('.zoomIn');
+
+    zoomedIn.className = 'menu-ball fadeUpAnimation';
   }
 };
 

@@ -18,12 +18,12 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
-window.addEventListener('pageshow', () => {
-  zoomedInBall = document.querySelector('.zoomIn');
-  if (zoomedInBall) {
-    zoomedInBall.style.classList.remove('zoomIn');
-  }
-});
+onpageshow = () => {
+  const balls = document.querySelectorAll('.menu-ball');
+  balls.forEach((ball) => {
+    ball.style.className = 'menu-ball fadeUpAnimation';
+  });
+};
 
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');

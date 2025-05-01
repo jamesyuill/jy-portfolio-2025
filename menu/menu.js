@@ -2,6 +2,7 @@ const projectBall = document.getElementById('project-ball');
 const experimentBall = document.getElementById('experiments-ball');
 const playgroundBall = document.getElementById('playground-ball');
 const contactBall = document.getElementById('contact-ball');
+let zoomedInBall;
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -18,7 +19,7 @@ contactBall.style.backgroundColor = '#4dabf7';
 const shrinkFactor = 3;
 
 window.addEventListener('pageshow', () => {
-  const zoomedInBall = document.querySelector('.zoomIn');
+  zoomedInBall = document.querySelector('.zoomIn');
   if (zoomedInBall) {
     zoomedInBall.style.classList.remove('zoomIn');
   }

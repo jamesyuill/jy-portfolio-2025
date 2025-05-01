@@ -17,12 +17,12 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
-onpageshow = (event) => {
-  projectBall.className = 'menu-ball fadeUpAnimation';
-  experimentBall.className = 'menu-ball fadeUpAnimation';
-  playgroundBall.className = 'menu-ball fadeUpAnimation';
-  contactBall.className = 'menu-ball fadeUpAnimation';
-};
+// onpageshow = (event) => {
+//   projectBall.className = 'menu-ball fadeUpAnimation';
+//   experimentBall.className = 'menu-ball fadeUpAnimation';
+//   playgroundBall.className = 'menu-ball fadeUpAnimation';
+//   contactBall.className = 'menu-ball fadeUpAnimation';
+// };
 
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');
@@ -40,13 +40,10 @@ menuBalls.forEach((item) => {
   item.addEventListener('click', (e) => {
     const text = e.target.innerText;
     const target = e.target;
-    target.classList.remove('fadeUpAnimation');
-    target.classList.add('zoomIn');
+    target.className = 'menu-ball zoomIn';
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
-      target.classList.remove('zoomIn');
       window.location.href = `../${text}/` + text + '.html';
-      // item.style.transform = 'scale(1500%)';
     });
     menuBalls.forEach((item) => {
       if (item !== e.target) {

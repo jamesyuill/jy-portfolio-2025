@@ -44,8 +44,9 @@ menuBalls.forEach((item) => {
     target.classList.add('zoomIn');
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
+      target.classList.remove('zoomIn');
       window.location.href = `../${text}/` + text + '.html';
-      item.style.transform = 'scale(1500%)';
+      // item.style.transform = 'scale(1500%)';
     });
     menuBalls.forEach((item) => {
       if (item !== e.target) {

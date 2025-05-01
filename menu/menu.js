@@ -20,7 +20,7 @@ const shrinkFactor = 3;
 onpageshow = (event) => {
   if (event.persisted) {
     const zoomedIn = document.querySelector('.zoomIn');
-
+    zoomedIn.style.classList.remove('zoomIn');
     zoomedIn.className = 'menu-ball fadeUpAnimation';
   }
 };

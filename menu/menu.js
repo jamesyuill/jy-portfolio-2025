@@ -20,10 +20,9 @@ const shrinkFactor = 3;
 
 onpageshow = (event) => {
   if (event.persisted) {
-    console.log('condition met');
     const balls = document.querySelectorAll('.menu-ball');
     balls.forEach((ball) => {
-      ball.style.className = 'menu-ball fadeUpAnimation';
+      ball.className = 'menu-ball fadeUpAnimation';
     });
   }
 };

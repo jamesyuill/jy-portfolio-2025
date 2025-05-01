@@ -18,11 +18,13 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
-onpageshow = () => {
-  const balls = document.querySelectorAll('.menu-ball');
-  balls.forEach((ball) => {
-    ball.style.className = 'menu-ball fadeUpAnimation';
-  });
+onpageshow = (event) => {
+  if (event.persisted) {
+    const balls = document.querySelectorAll('.menu-ball');
+    balls.forEach((ball) => {
+      ball.style.className = 'menu-ball fadeUpAnimation';
+    });
+  }
 };
 
 //Ball size and font size

@@ -17,12 +17,18 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
-// onpageshow = (event) => {
-//   projectBall.className = 'menu-ball fadeUpAnimation';
-//   experimentBall.className = 'menu-ball fadeUpAnimation';
-//   playgroundBall.className = 'menu-ball fadeUpAnimation';
-//   contactBall.className = 'menu-ball fadeUpAnimation';
-// };
+onpageshow = (event) => {
+  if (event.persisted) {
+    void projectBall.offsetWidth;
+    void experimentBall.offsetWidth;
+    void playgroundBall.offsetWidth;
+    void contactBall.offsetWidth;
+    projectBall.className = 'menu-ball fadeUpAnimation';
+    experimentBall.className = 'menu-ball fadeUpAnimation';
+    playgroundBall.className = 'menu-ball fadeUpAnimation';
+    contactBall.className = 'menu-ball fadeUpAnimation';
+  }
+};
 
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');

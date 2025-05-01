@@ -18,11 +18,10 @@ contactBall.style.backgroundColor = '#4dabf7';
 const shrinkFactor = 3;
 
 onpageshow = (event) => {
-  if (event.persisted) {
-    const zoomedIn = document.querySelector('.zoomIn');
-    zoomedIn.style.classList.remove('zoomIn');
-    zoomedIn.className = 'menu-ball fadeUpAnimation';
-  }
+  projectBall.className = 'menu-ball fadeUpAnimation';
+  experimentBall.className = 'menu-ball fadeUpAnimation';
+  playgroundBall.className = 'menu-ball fadeUpAnimation';
+  contactBall.className = 'menu-ball fadeUpAnimation';
 };
 
 //Ball size and font size

@@ -17,6 +17,13 @@ contactBall.style.backgroundColor = '#4dabf7';
 
 const shrinkFactor = 3;
 
+window.addEventListener('pageshow', () => {
+  const zoomedInBall = document.querySelector('.zoomIn');
+  if (zoomedInBall) {
+    zoomedInBall.style.classList.remove('zoomIn');
+  }
+});
+
 //Ball size and font size
 const menuBalls = document.querySelectorAll('.menu-ball');
 menuBalls.forEach((item) => {
@@ -38,7 +45,7 @@ menuBalls.forEach((item) => {
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
       window.location.href = `../${text}/` + text + '.html';
-      // target.classList.remove('zoomIn');
+      item.style.transform = 'scale(1500%)';
     });
     menuBalls.forEach((item) => {
       if (item !== e.target) {

@@ -45,6 +45,7 @@ hero.addEventListener('click', (e) => {
 
   const zoomInAnimation = document.querySelector('.zoomIn');
   zoomInAnimation.addEventListener('animationend', () => {
+    hero.style.transform = 'scale(1500%)';
     window.location.href = './menu/menu.html';
   });
 });

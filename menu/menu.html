@@ -6,19 +6,7 @@
     <link rel="stylesheet" href="../style.css" />
 
     <script src="menu.js" defer></script>
-    <script defer>
-      //reload the page
-      window.addEventListener('pageshow', () => {
-        const balls = document.querySelectorAll('.menu-ball');
 
-        balls.forEach((ball) => {
-          ball.classList.remove('menu-ball');
-          void ball.offsetWidth;
-
-          ball.classList.add('menu-ball');
-        });
-      });
-    </script>
     <title>James Yuill | Menu</title>
   </head>
   <body style="overflow: hidden">

@@ -22,9 +22,7 @@ onpageshow = (event) => {
   if (event.persisted) {
     const balls = document.querySelectorAll('.menu-ball');
     balls.forEach((ball) => {
-      ball.style.classList.remove('menu-ball fadeupAnimation');
-      void ball.offsetWidth;
-      ball.style.classList.add('menu-ball fadeUpAnimation');
+      ball.style.className = 'menu-ball fadeUpAnimation';
     });
   }
 };

@@ -5,6 +5,11 @@ const playgroundSlugs = [
     img_url: 'https://editor.p5js.org/jamesyuill/full/bkDZlTkTW',
   },
   {
+    title: 'Bee & Flower',
+    img_src: '../assets/p5-images/p5-bee-flower.png',
+    img_url: 'https://editor.p5js.org/jamesyuill/full/CpM2bBZF8',
+  },
+  {
     title: 'Spiral',
     img_src: '../assets/p5-images/p5-spiral.png',
     img_url: 'https://editor.p5js.org/jamesyuill/full/jMLFOIYwE',

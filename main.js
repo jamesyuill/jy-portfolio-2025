@@ -41,11 +41,14 @@ window.addEventListener('resize', (e) => {
 });
 
 hero.addEventListener('click', (e) => {
+  e.preventDefault();
   e.target.classList.add('zoomIn');
 
-  const zoomInAnimation = document.querySelector('.zoomIn');
-  zoomInAnimation.addEventListener('animationend', () => {
-    hero.style.transform = 'scale(1500%)';
+  // const zoomInAnimation = document.querySelector('.zoomIn');
+  // zoomInAnimation.addEventListener('animationend', () => {
+  // hero.style.transform = 'scale(1500%)';
+  setTimeout(() => {
     window.location.replace('./menu/menu.html');
-  });
+  }, 500);
+  // });
 });

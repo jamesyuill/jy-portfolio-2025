@@ -32,6 +32,12 @@ hero.style.width = `${width < height ? width : height}px`;
 hero.style.height = `${width < height ? width : height}px`;
 hero.style.fontSize = `${width < height ? width / 120 : height / 120}rem`;
 
+onpageshow = (event) => {
+  if (event.persisted) {
+    console.log('persisted');
+  }
+};
+
 window.addEventListener('resize', (e) => {
   let width = e.target.innerWidth / padding;
   let height = e.target.innerHeight / padding;

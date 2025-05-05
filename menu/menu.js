@@ -45,15 +45,22 @@ menuBalls.forEach((item) => {
 
   item.addEventListener('click', (e) => {
     e.preventDefault();
-    const target = e.target;
-    const targetText = e.target.innerText;
+    const target = e.currentTarget;
+    const targetText = target.innerText;
+
     target.className = 'menu-ball zoomIn';
+
     const zoomInAnimation = document.querySelector('.zoomIn');
-    zoomInAnimation.addEventListener('animationend', () => {
-      setTimeout(() => {
-        window.location.href = `../${targetText}/${targetText}.html`;
-      }, 500);
-    });
+    zoomInAnimation.addEventListener(
+      'animationend',
+      () => {
+        setTimeout(() => {
+          window.location.href = `../${targetText}/${targetText}.html`;
+        }, 500);
+      },
+      { once: true }
+    );
+
     menuBalls.forEach((item) => {
       if (item !== e.target) {
         item.classList.replace('fadeUpAnimation', 'fadeOutAnimation');

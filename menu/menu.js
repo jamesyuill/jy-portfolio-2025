@@ -44,6 +44,7 @@ menuBalls.forEach((item) => {
   }px`;
 
   item.addEventListener('click', (e) => {
+    e.preventDefault();
     const target = e.target;
     const targetText = e.target.innerText;
     target.className = 'menu-ball zoomIn';

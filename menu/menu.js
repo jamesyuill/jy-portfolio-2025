@@ -50,7 +50,7 @@ menuBalls.forEach((item) => {
     const zoomInAnimation = document.querySelector('.zoomIn');
     zoomInAnimation.addEventListener('animationend', () => {
       setTimeout(() => {
-        window.location.replace(`../${targetText}/${targetText}.html`);
+        window.location.href = `../${targetText}/${targetText}.html`;
       }, 500);
     });
     menuBalls.forEach((item) => {

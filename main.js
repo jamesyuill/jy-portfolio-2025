@@ -48,7 +48,7 @@ hero.addEventListener('click', (e) => {
   // zoomInAnimation.addEventListener('animationend', () => {
   // hero.style.transform = 'scale(1500%)';
   setTimeout(() => {
-    window.location.replace('./menu/menu.html');
+    window.location.href = './menu/menu.html';
   }, 500);
   // });
 });

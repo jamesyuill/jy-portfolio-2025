@@ -1,5 +1,11 @@
 const experimentSlugs = [
   {
+    title: 'Youtube Audio Scrape and Slice',
+    img: '../assets/experiment-images-small/youtube-audio-small.png',
+    about: 'Scrapes, converts and slices Youtube audio based on a search query',
+    href: '../experiments/youtube-audio.html',
+  },
+  {
     title: 'Transparent Browser Window',
     img: '../assets/experiment-images-small/transparent-browser-small.png',
     about: 'Idea to make a browser that was transparent',

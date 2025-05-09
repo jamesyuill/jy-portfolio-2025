@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="experiment-pages.css" />
+    <script>
+      function handleClick() {
+        window.location.href = `../experiments/experiments.html`;
+      }
+    </script>
+    <title>James Yuill | Youtube Audio Scrape and Slice</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <header>
+        <h1>Youtube Audio Scrape and Slice</h1>
+        <img
+          id="back-arrow"
+          src="../assets/icons/back-arrow.png"
+          alt="back arrow"
+          style="height: 35px"
+          onclick="handleClick()"
+        />
+      </header>
+      <main class="container">
+        <img
+          class="main-image"
+          src="../assets/experiment-images/youtube-audio-desktop.png"
+          alt="python scraper and slicer to generate microsamples from youtube audio"
+        />
+
+        <div class="belowimage">
+          <p>
+            <b>Tech: </b>Python, Selenium, Librosa, Beautiful Soup, bs4, yt_dlp
+          </p>
+          <div id="links">
+            <a href="https://github.com/jamesyuill/youtube-audio-sampler"
+              >Github</a
+            >
+
+            <!-- <a
+              href="https://www.linkedin.com/posts/jamesyuill_vanillajavascript-thatsright-itsnot-activity-7127032504250716160-neD3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEAyGgBt2wRDctn6qnjFU2626nqo1ZCmtU"
+              >Linkedin Post</a
+            > -->
+          </div>
+        </div>
+        <p>
+          I love the music of Jackson and His Computer Band. This French
+          producer spends years building epic sounding tracks from microsamples.
+          I wondered if there was a way of collecting microsamples using my
+          python coding skills. Yes there is/was.
+        </p>
+        <p>
+          It works by prompting the user to input a search query. One word will
+          do. This is used to generate a results page in youtube of all the
+          videos for that query. I then ask the user to pick a number between
+          1-10. This relates to the number of video results on the first page.
+          After some functions run, it spits out a handful of microsamples.
+        </p>
+        <p>
+          The flow is as follows. Selenium spins up a headless chrome browser.
+          pops the search term at the end of the youtube results domain.
+          Beautiful Soup then grabs all the video src links and based on the
+          number input by the user, selects one from the list. The video is then
+          downloaded, converted to audio and then the Librosa library leaps into
+          action. Analysing the bpm and then cutting a few little pieces
+          randomly out of the audio. It then saves these into a folder for me to
+          listen to and keep or delete.
+        </p>
+        <p>
+          I would love to integrate this into Ableton Live, but that might be a
+          bit too far away from me at the moment
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

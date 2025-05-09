@@ -7,6 +7,9 @@ experimentSlugs.forEach((item) => {
   cardDiv.setAttribute('class', 'experiment-card');
   const img = document.createElement('img');
   img.setAttribute('src', item.img);
+  const overlay = document.createElement('div');
+  overlay.setAttribute('class', 'overlay');
+  overlay.innerHTML = `<p>${item.language}</p>`;
   const title = document.createElement('h2');
   title.innerText = item.title;
   const about = document.createElement('p');
@@ -15,6 +18,7 @@ experimentSlugs.forEach((item) => {
   learnMoreButton.innerText = 'Read more';
   learnMoreButton.setAttribute('href', item.href);
   cardDiv.appendChild(img);
+  cardDiv.appendChild(overlay);
   cardDiv.appendChild(title);
   cardDiv.appendChild(about);
   cardDiv.appendChild(learnMoreButton);

@@ -8,6 +8,9 @@ projectSlugs.forEach((item) => {
   const el = document.createElement('div');
   const img = document.createElement('img');
   img.setAttribute('src', item.img);
+  const overlay = document.createElement('div');
+  overlay.setAttribute('class', 'overlay');
+  overlay.innerHTML = `<p>${item.language}</p>`;
   const title = document.createElement('h2');
   title.innerText = item.title;
   const about = document.createElement('p');
@@ -16,6 +19,7 @@ projectSlugs.forEach((item) => {
   learnMoreButton.innerText = 'Read more';
   learnMoreButton.setAttribute('href', item.href);
   el.appendChild(img);
+  el.appendChild(overlay);
   el.appendChild(title);
   el.appendChild(about);
   cardDiv.appendChild(el);
